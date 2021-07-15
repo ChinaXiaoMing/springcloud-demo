@@ -26,6 +26,7 @@
     <module>eureka-server</module>
     <module>eureka-client-one</module>
     <module>eureka-client-two</module>
+    <module>nacos-server</module>
   </modules>
 
   <!-- 声明依赖版本 -->
