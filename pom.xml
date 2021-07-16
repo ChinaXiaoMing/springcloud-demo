@@ -20,6 +20,8 @@
     <java.version>1.8</java.version>
     <spring-cloud.version>2020.0.1</spring-cloud.version>
     <lombok-version>1.18.18</lombok-version>
+    <mybatis-plus.version>3.4.3.1</mybatis-plus.version>
+    <mysql.version>8.0.25</mysql.version>
   </properties>
 
   <modules>
@@ -27,6 +29,7 @@
     <module>eureka-client-one</module>
     <module>eureka-client-two</module>
     <module>nacos-server</module>
+    <module>nacos-service-one</module>
   </modules>
 
   <!-- 声明依赖版本 -->
@@ -61,6 +64,19 @@
     </dependency>
 
     <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+      <version>${mybatis-plus.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>${mysql.version}</version>
+    </dependency>
+
+
+    <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>${lombok-version}</version>
@@ -73,6 +89,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>2.4.3</version>
       </plugin>
     </plugins>
   </build>

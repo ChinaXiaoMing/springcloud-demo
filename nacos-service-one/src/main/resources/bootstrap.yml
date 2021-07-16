@@ -1,0 +1,17 @@
+server:
+  port: 8071
+spring:
+  application:
+    name: nacos-service-one
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        group: nacos-service-one
+      config:
+        extension-configs:
+          - data-id: application-dev.yml
+        group: nacos-service-one
+        file-extension: yaml
+        server-addr: localhost:8848
+        namespace: deef50f7-2435-4bab-8c71-486e60869cd5
